@@ -45,10 +45,12 @@ const About = () => {
               <div className="info__contacts">
                 <div className="row_normal">
                   {state.map((info) => (
-                    <div>
+                   <div className="info_container">
+                   <div>
                       <strong>{info.title}</strong>
-                      <span>{info.text}</span>
+                      <p>{info.text}</p>
                     </div>
+                   </div>
                   ))}
                 </div>
               </div>

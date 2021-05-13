@@ -6,6 +6,7 @@ import {
   FaHamburger,
   FaKeyboard,
 } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 const Services = () => {
   const [header] = React.useState({
     mainHeader: "POJECT",
@@ -27,7 +28,7 @@ const Services = () => {
       id: 2,
       icon: <FaHamburger className="commonIcons" />,
       heading: "Food Finder",
-      links:'',
+      links:'https://pawan-k-umar.github.io/meal-finder/',
       text:
         "It is Food finder web app which is take food name using search box and provide their data",
         language : 'HTML , CSS , JAVASCRIPT',
@@ -36,7 +37,7 @@ const Services = () => {
       id: 3,
       icon: <FaKeyboard className="commonIcons" />,
       heading: "Typing Speed",
-      links:'',
+      links:'https://pawan-k-umar.github.io/speed-typing-master/',
       text:
         "It is another interesting project. When user typed given words correctly then increase the time according their level",
         language : 'HTML , CSS , JAVASCRIPT',
@@ -84,12 +85,14 @@ const Services = () => {
           <div className="row_normal bgMain">
             {state.map((info) => (
               <div className="col-4_normal bgMain">
-                <div className="services__box">
+               <a className='project_link' href={info.links} target='__blank'>
+               <div className="services__box">
                   {info.icon}
                   <div className="services__box-header">{info.heading}</div>
                   <div className="services__box-p">{info.text}</div>
                   <p className='project__languge' >{info.language} </p>
                 </div>
+               </a>
               </div>
             ))}
           </div>

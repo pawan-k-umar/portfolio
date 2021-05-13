@@ -18,7 +18,7 @@ const Contact = () => {
           <div className="commonBorder"></div>
         </div>
                     {/* <!-- contact us content start --> */}
-                    <div class="container my-2 py-2">
+                    <div class="container py-2">
 
                         <div class="row text-center h1">
                             <div class="col-lg-4 col-sm-12 my-2">

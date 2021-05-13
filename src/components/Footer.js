@@ -16,21 +16,6 @@ const Footer = () => {
               <div className="footerSection-logo">
               <a href='/'> <h2>paw<span className='dot'>.</span>an</h2></a>
               </div>
-             
-              <ul className="footerCircles">
-                <li>
-                  <FaFacebookF className="footerIcon" />
-                </li>
-                <li>
-                  <FaTwitter className="footerIcon" />
-                </li>
-                <li>
-                  <FaPinterest className="footerIcon" />
-                </li>
-                <li>
-                  <FaInstagram className="footerIcon" />
-                </li>
-              </ul>
               <p>
                 copyright &copy; 2021 
               </p>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch,Redirect } from 'react-router-dom';
 
 import "./App.css";
 import Banner from "./components/Banner";
@@ -18,6 +18,7 @@ function App() {
     <Route path='/about' component={About}></Route>
     <Route path='/project' component={Services}></Route>
     <Route path='/contact' component={Contact}></Route>
+    <Redirect to='/'/>
     </Switch>
     <Footer/>
     </div>
